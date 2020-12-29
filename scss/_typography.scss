@@ -1,0 +1,25 @@
+// HEADINGS
+h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading{
+        font-size: 9.6rem;
+    }
+
+    &.sm-heading{
+        margin-bottom: 4rem;
+        padding: 1rem 0.6rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+//LINKS
+
+a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.text-secondary {
+    color: $secondary-color;
+}

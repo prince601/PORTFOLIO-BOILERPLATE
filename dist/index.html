@@ -5,15 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="prince KABASELE">
         <meta name="description" content="A webapp using modern techniques and web technologies">
-        <meta name="keywords" content="webdeveloper, webdesigner,  webdevelopment, javascript, sass, css, node-sass, netlify, netlify-cli, hire developper">
+        <meta name="keywords" content="webdeveloper, webdesigner,  webdevelopment, webApp, PWA, javascript, sass, css, node-sass, netlify, netlify-cli, hire developper">
         <title>Prince KABASELE Portfolio | Welcome on my Portfolio</title>
         <link rel="shortcut icon" href="/img/" type="image/png">
         <link rel="icon" href="/img/" type="image/png">
         <link rel="manifest" href="manifest.json">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type= "text/css" href="css/main.css">
     </head>
+    <body id="bg-image">
+       <header>
+           <div class="menu-btn">
+               <div class="btn-line"></div>
+               <div class="btn-line"></div>
+               <div class="btn-line"></div>
+           </div>
+           <nav class="menu">
+               <div class="menu-branding">
+                   <div class="menu-portrait"></div>
+               </div>
+               <div class="menu-nav">
+                   <ul>
+                       <li class="menu--item"><a href="/" class="nav--link">Home</a></li>
+                       <li class="menu--item"><a href="/about.html" class="nav--link">About Me</a></li>
+                       <li class="menu--item"><a href="/work.html" class="nav--link">My Works</a></li>
+                       <li class="menu--item"><a href="/contact.html" class="nav--link">How to reach Me</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </header>
+       <main class="main" id="home">
+           <h1 class="lg-heading">Prince <span class="text-secondary">Kab</span></h1>
+           <h2 class="sm-heading">Web developer, Programmer, Designer & Entrepreneur</h2>
 
-    <body>
-        
+           <ul class="svg-icons">
+               <li><a href="https://facebook.com/fouiny-kabasele">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook1"></use>
+                    </svg>
+               </a></li>
+               <li><a href="https://twitter.com/prince-kab">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-twitter1"></use>
+                    </svg>
+                </a></li>
+               <li><a href="https://linkedin.com/in/prince-kabasele-79a3b2167">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-linkedin1"></use>
+                    </svg>
+               </a></li>
+               <li><a href="https://github.com/prince601">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                </a></li>
+           </ul>
+       </main>
+
+        <script defer src="js/main.js"></script>
     </body>
 </html>

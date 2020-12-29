@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "devserver": "live-server  --browser=firefox --entry-file=/dist/",
+    "devserver": "live-server  --browser=firefox ",
     "start": "npm-run-all --parallel  devserver watch:sass",
     "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/main.comp.css -o dist/css/main.prefix.css",

@@ -1,0 +1,31 @@
+
+:root{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    @include background;
+    background:$primary-color;
+    color: #fff;
+    height: 100%;
+    font-family: $font-stack;
+    line-height: 1.5;
+}
+.main{
+    height: 100%;
+    padding: 5rem;
+}
+
+#home {
+    overflow: hidden;
+    margin-top: 25vh;
+}

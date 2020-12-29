@@ -1,0 +1,15 @@
+@mixin easeOut {
+    transition: all 0.5s ease-in;
+}
+
+@mixin background {
+    @if $show-image-home {
+        &#bg-image {
+            background: linear-gradient(rgba(#444, $opacity), rgba(#444, $opacity)), url(../img/background-light-large-2000x1125-2x.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
