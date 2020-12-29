@@ -47,6 +47,32 @@ a:link, a:visited {
 .text-secondary {
   color: #eece1a; }
 
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 3.5rem;
+  top: 3.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in; }
+  .menu-btn .btn-line {
+    width: 2.8rem;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-in; }
+    .menu-btn .btn-line:nth-child(2) {
+      width: 80%; }
+  .menu-btn.close {
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in; }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0;
+      visibility: hidden; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -7px); }
+
 .svg-icons {
   width: 33%;
   list-style: none;
@@ -66,4 +92,5 @@ a:link, a:visited {
 header {
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  top: 2rem; }
