@@ -1,25 +1,46 @@
 // HEADINGS
 h1, h2, h3{
     margin: 0;
-    font-weight: 400;
+    font-weight: 350;
 
     &.lg-heading{
         font-size: 9.6rem;
+        font-weight: 900;
     }
 
     &.sm-heading{
         margin-bottom: 4rem;
         padding: 1rem 0.6rem;
         background: rgba(lighten($primary-color, 2), 0.5);
+        font-size: 1.8rem;
+        text-transform: capitalize;
     }
 }
 
 //LINKS
-
 a:link, a:visited {
     color: #fff;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    font-weight: 300;
     text-decoration: none;
 }
 .text-secondary {
     color: $secondary-color;
+}
+
+
+//MENU LINKS
+.menu--item{
+    .nav--link:link,
+    .nav--link:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+    &.current > .nav--link{
+        color: $secondary-color;
+    }
 }
