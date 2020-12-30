@@ -6,6 +6,10 @@ h1, h2, h3{
     &.lg-heading{
         font-size: 9.6rem;
         font-weight: 900;
+
+        @include smallerScreen{
+            font-weight: 800;
+        }
     }
 
     &.sm-heading{
@@ -14,6 +18,19 @@ h1, h2, h3{
         background: rgba(lighten($primary-color, 2), 0.5);
         font-size: 1.8rem;
         text-transform: capitalize;
+
+        @include smallerScreen{
+            font-size: 2rem;
+        }
+
+    }
+}
+
+.main {
+    @include smallerScreen{
+        align-items: center;
+        text-align: center;  
+        line-height:1.3;     
     }
 }
 
@@ -24,6 +41,10 @@ a:link, a:visited {
     padding: 2rem 0;
     font-weight: 300;
     text-decoration: none;
+    @include smallerScreen{
+        font-weight: 400;
+        padding: 4rem 0;
+    }
 }
 .text-secondary {
     color: $secondary-color;

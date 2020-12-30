@@ -1,7 +1,23 @@
 
 :root{
-    font-size: 10px;
+    font-size: 65.5%; // 10/16 = 62.5% ==> 1rem = 10px
     box-sizing: border-box;
+
+    @include smallerScreen{
+        font-size: 46.8%; //7.5/16 => 46.8%, => 1rem = 7.5px
+    }
+
+    @include mediumScreen{
+
+    }
+
+    @include largeScreen{
+
+    }
+
+    @include largestScreen{
+
+    }
 }
 
 *,
@@ -18,14 +34,21 @@ body {
     color: #fff;
     height: 100%;
     font-family: $font-stack;
-    line-height: 1.5;
+    @include smallerScreen{
+        line-height: 1.2;  
+    }
 }
 .main{
     height: 100%;
     padding: 5rem;
+    line-height: 1.5;
 }
 
 #home {
     overflow: hidden;
     margin-top: 25vh;
+    @include smallerScreen{
+        overflow: hidden;
+    }
+    
 }

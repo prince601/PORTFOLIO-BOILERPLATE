@@ -5,3 +5,10 @@ $font-stack: "Roboto","Segoe UI", Tahoma, Verdana, sans-serif;
 $show-image-home: true;
 $home-background: url(../img/background-light-large-2000x1125-2x.jpg);
 $opacity: 0.8;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 67.5em; //1080px
+$bp-medium: 60em; //960px
+$bp-small: 45em; //720px
+$bp-smaller: 37.5em; //600px
