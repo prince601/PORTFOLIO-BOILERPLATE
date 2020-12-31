@@ -1,0 +1,7 @@
+@function set-color($color){
+    @if(lightness($color) > 30){
+        @return lighten(#222, 4);
+    } @else {
+        @return darken(#fff, 4);
+    }
+}

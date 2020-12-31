@@ -11,7 +11,7 @@
         width: 2.8rem;
         height: 3px;
         margin:0 0 5px 0;
-        background: #fff;
+        background:set-color($primary-color);
         @include easeOut;
         //line two
         &:nth-child(2){

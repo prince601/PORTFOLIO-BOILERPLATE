@@ -12,7 +12,7 @@
 .icon {
     height: 4rem;
     width: 4rem;
-    fill: #fff;
+    fill: set-color($primary-color);
     @include easeOut();
     
     &:hover {

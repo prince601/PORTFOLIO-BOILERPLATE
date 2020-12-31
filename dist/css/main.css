@@ -13,8 +13,8 @@
   box-sizing: inherit; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #2c2c2c;
+  color: #2c2c2c;
   height: 100%;
   font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif; }
   body#bg-image {
@@ -51,7 +51,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 4rem;
     padding: 1rem 0.6rem;
-    background: rgba(73, 73, 73, 0.5);
+    background: rgba(255, 254, 254, 0.5);
     font-size: 1.8rem;
     text-transform: capitalize; }
     @media only screen and (max-width: 37.5em) {
@@ -65,7 +65,7 @@ h1, h2, h3 {
     line-height: 1.3; } }
 
 a:link, a:visited {
-  color: #fff;
+  color: #2c2c2c;
   font-size: 2.5rem;
   padding: 2rem 0;
   font-weight: 300;
@@ -76,7 +76,7 @@ a:link, a:visited {
       padding: 4rem 0; } }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #b49c31; }
 
 .menu--item .nav--link:link,
 .menu--item .nav--link:visited {
@@ -84,10 +84,10 @@ a:link, a:visited {
   text-decoration: none; }
   .menu--item .nav--link:link:hover,
   .menu--item .nav--link:visited:hover {
-    color: #eece1a; }
+    color: #b49c31; }
 
 .menu--item.current > .nav--link {
-  color: #eece1a; }
+  color: #b49c31; }
 
 .menu-btn {
   position: absolute;
@@ -100,7 +100,7 @@ a:link, a:visited {
     width: 2.8rem;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #2c2c2c;
     transition: all 0.5s ease-in; }
     .menu-btn .btn-line:nth-child(2) {
       width: 80%; }
@@ -109,13 +109,13 @@ a:link, a:visited {
     transition: all 0.5s ease-in; }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
-      background: #eece1a; }
+      background: #b49c31; }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0;
       visibility: hidden; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(6px, -7px);
-      background: #eece1a; }
+      background: #b49c31; }
 
 .menu {
   position: fixed;
@@ -141,7 +141,7 @@ a:link, a:visited {
         height: 0;
         text-align: center; } }
   .menu-nav {
-    background: #3a3a3a;
+    background: #f6e8e8;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-in; }
     @media only screen and (max-width: 37.5em) {
@@ -156,7 +156,7 @@ a:link, a:visited {
         .menu-nav.show {
           transform: translate3d(0, 0, 0); } }
   .menu-branding {
-    background: #444;
+    background: #fcf7f7;
     transition: all 0.5s ease-in;
     transform: translate3d(0, 100%, 0); }
     @media only screen and (max-width: 37.5em) {
@@ -169,7 +169,7 @@ a:link, a:visited {
       width: 25rem;
       height: 25rem;
       border-radius: 50%;
-      border: 5px solid #c6ab0f;
+      border: 5px solid #8c7926;
       background: url("../img/PrincePortrait-medium-960px.jpg");
       background-position: center;
       background-size: cover; }
@@ -194,10 +194,10 @@ a:link, a:visited {
 .icon {
   height: 4rem;
   width: 4rem;
-  fill: #fff;
+  fill: #2c2c2c;
   transition: all 0.5s ease-in; }
   .icon:hover {
-    fill: #eece1a;
+    fill: #b49c31;
     transform: scale(1.3);
     transition: all 0.5s ease-in; }
 

@@ -30,8 +30,8 @@
 
 body {
     @include background;
-    background:$primary-color;
-    color: #fff;
+    background:set-color($primary-color);
+    color: set-color($primary-color);
     height: 100%;
     font-family: $font-stack;
     @include smallerScreen{
