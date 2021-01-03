@@ -34,6 +34,37 @@ h1, h2, h3{
     }
 }
 
+#about {
+    .lg-heading{
+        font-size: 7rem;
+        font-weight: 700;
+
+        @include smallerScreen{
+            font-weight: 600;
+        }
+    }
+
+    #text-secondary-about {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        font-size: 1.7rem;
+        font-weight: 300;
+        padding: 2rem;
+    }
+
+    .job-hirer{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+}
+
 //LINKS
 a:link, a:visited {
     color: set-color($primary-color);

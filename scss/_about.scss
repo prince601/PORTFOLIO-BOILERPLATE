@@ -1,0 +1,92 @@
+#main-about-container {
+    display: grid;
+    grid-template-rows: auto 7vh;
+}
+.about-overflow {
+    overflow: hidden;
+}
+
+#about {
+    margin: 2rem;
+    
+    .about-info {
+        display: grid;
+        grid-row-gap: 3rem;
+    }
+
+    .about-details {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 2rem;
+
+        @include smallerScreen{
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+        }
+
+        .about-image {
+            justify-self: center;
+            align-items: center;
+            .img-admin {
+                height: 20rem;
+                width: 20rem;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid $secondary-color;
+            }
+        }
+
+        .about-bio {
+            justify-items: center;
+            align-items: center;
+
+            @include smallerScreen{
+                text-align: center;
+            }
+        }
+    }
+
+    .about-job {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-column-gap: 2rem;
+
+        @include smallerScreen{
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+
+        .sub-about-job{
+            background: rgba(darken($primary-color, 5), 0.7);
+            border-bottom: 2px solid $secondary-color;
+            border-right: 2px solid $secondary-color;
+            align-items: center;
+            justify-items: center;
+
+            @include smallerScreen{
+                margin-bottom: 2rem;
+            }
+
+            .job-hirer {
+                background:rgba(darken($primary-color, 10), 0.7) ;
+                padding: 1rem;
+                margin-bottom: .5rem;
+            }
+            .job-position {
+                background: rgba(lighten($primary-color, 10), .5);
+                text-align: center;
+                padding: .5rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+#main-footer {
+    background: rgba(darken($primary-color, 5), 0.7);
+
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}

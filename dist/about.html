@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="prince KABASELE">
+        <meta name="description" content="A webapp using modern techniques and web technologies">
+        <meta name="keywords" content="webdeveloper, webdesigner,  webdevelopment, webApp, PWA, javascript, sass, css, node-sass, netlify, netlify-cli, hire developper">
+        <title>Prince KABASELE Portfolio | About Me</title>
+        <link rel="shortcut icon" href="/img/" type="image/png">
+        <link rel="icon" href="/img/" type="image/png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" type= "text/css" href="css/main.css">
+    </head>
+    <body id="bg-image" class="about-overflow">
+       <header>
+           <div class="menu-btn">
+               <div class="btn-line"></div>
+               <div class="btn-line"></div>
+               <div class="btn-line"></div>
+           </div>
+           <nav class="menu">
+               <div class="menu-branding">
+                   <div class="menu-branding--portrait"></div>
+               </div>
+               <div class="menu-nav">
+                   <ul>
+                       <li class="menu--item "><a href="/" class="nav--link">Home</a></li>
+                       <li class="menu--item current"><a href="about.html" class="nav--link">About Me</a></li>
+                       <li class="menu--item"><a href="work.html" class="nav--link">My Works</a></li>
+                       <li class="menu--item"><a href="contact.html" class="nav--link">How to reach Me</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </header>
+       <article role="main-grid-container" id="main-about-container">
+            <main  id="about">
+                    <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+                    <h2 class="sm-heading">Let me tell you a few things about me</h2>
+                    <section class="about-info">
+                        <section class="about-details">
+                            <figure class="about-image">
+                                <img 
+                                    srcset="img/PrincePortrait-medium-960px.jpg 1920w, img/PrincePortrait-medium-960px.jpg 720w" 
+                                    src="img/PrincePortrait-medium-960px.jpg"
+                                    sizes="(max-width:600px) 100%,(max-width:720px) 100%,(max-width:960px) 100%,(max-width:1080px) 100%"
+                                    alt="portrait prince kabase"
+                                    class="img-admin"
+                                >
+                            </figure>
+                            <article class="about-bio">
+                                <h2 class="text-secondary" id="text-secondary-about">BIO</h2>
+                                <p>Hey Everyone! My name is Prince KABASELE, i am 23 years old and
+                                    i am passionated about web technologies specifically JavaScript. 
+                                    I get started WebDev in 2017 and begun working as a pro in 2019. 
+                                    Very glad to have you on board!
+                                </p>
+                            </div>
+                        </section>
+                    <section class="about-job">
+                            <section class=" sub-about-job">
+                                <h2 class="job-hirer">AMG-PROJUSTITIA</h2>
+                                <h3 class="job-position">Fullstack Developer</h3>
+                                <p>
+                                    Consisted on building a criminal register. 
+                                    I have designed the UI and wrote down the  technical specifications for the WebApp. 
+                                    We've built it within 2 months with the MERN stack.
+                                </p>
+                            </section>
+                            <section class=" sub-about-job">
+                                <h2 class="job-hirer">Motorcy</h2>
+                                <h3 class="job-position">UI Designer & Front-end Dev</h3>
+                                <p class="job-description">
+                                    One of my favorite self-side project, Motorcy, a fictious company that sells motorcycles.
+                                    The WebApp was built as a presentation of what the company offers.
+                                </p>
+                            </section>
+                            <section class=" sub-about-job">
+                                <h2 class="job-hirer">Nexter</h2>
+                                <h3 class="job-position">Front-end Dev</h3>
+                                <p class="job-description">
+                                    A remote job, they sent me the design made with Figma in order to implement the Interface.
+                                </p>
+                            </section>
+                    </section>
+                    </section>
+            </main>
+            <footer id="main-footer">
+                <p>Copyrights &copy; <span id="dateYear">2021</span></p>
+            </footer>
+       </article>
+        <script defer src="js/main.js"></script>
+    </body>
+</html>

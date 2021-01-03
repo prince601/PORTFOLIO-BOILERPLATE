@@ -4,10 +4,12 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.menu--item');
+let currentYear = document.querySelector('#dateYear');
 
 //set Initial value of the menu
 let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu)
+currentYear.textContent = showCurrentYear();
 
 
 //Functions
@@ -31,4 +33,10 @@ function toggleMenu(){
         // set the state
         showMenu = false;
     }
+}
+
+function showCurrentYear(){
+    let dateYear = new Date;
+    currentYear = dateYear.getFullYear();
+    return currentYear
 }
