@@ -4,6 +4,7 @@ h1, h2, h3{
     font-weight: 350;
 
     &.lg-heading{
+       
         font-size: 9.6rem;
         font-weight: 900;
 
@@ -94,5 +95,17 @@ a:link, a:visited {
     }
     &.current > .nav--link{
         color: $secondary-color;
+    }
+}
+
+//Work page
+
+
+
+.projects{
+    h4 {
+        font-size: 2rem;
+        font-weight: normal;
+        text-transform: capitalize;
     }
 }
